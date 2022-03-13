@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography, TextField, Link, Button } from '@mui/material'
-import logo from './static/images/bupLogo.svg'
+import logo from '../static/images/bupLogo.svg'
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';

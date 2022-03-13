@@ -1,9 +1,9 @@
 import { Box } from '@mui/material'
 import React from 'react'
-import RightSide from '../components/RightSide'
+import RightSide from '../components/RightSide/RightSide'
 import Header from './Header'
 import Footer from './Footer'
-import LogInForm from '../components/LogInForm'
+import LogInForm from '../components/LogInForm/LogInForm'
 
 const Login = () => {
   return (

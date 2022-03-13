@@ -2,60 +2,29 @@ import React from 'react'
 import { Typography, Box } from '@mui/material'
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
-import StarIcon from '../components/StarIcon'
-import star from './static/images/star.svg'
-import starYellow from './static/images/star-yellow.svg'
+import star from '../static/images/star.svg'
+import starYellow from '../static/images/star-yellow.svg'
+import css from './RightSide.module.css'
 
 const RightSide = () => {
     return (
-        <Box
-            style={{
-                width: 768,
-                height: 960,
-                color: 'white'
-            }}
-            sx={{
-                display: "flex",
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundImage: "linear-gradient(45deg, #101828 0%, #475467 100%)",
-                '&:hover': {
-                    opacity: [0.9, 0.8, 0.7],
-                },
-            }}
-        >
+        <Box className={css.container} >
             <Box style={{width:576}}>
-                <Box style={{ width: 80, height: 80, marginBottom: 32 }}>
+                <Box className={css.imgBox}>
                     <img
+                        className={css.firstStar}
                         src={starYellow}
                         alt=""
-                        style={{
-                            position: 'relative',
-                            display: 'block',
-                            top: 0,
-                            right: 0
-                        }}
                     />
                     <img
+                        className={css.bigStar}
                         src={star}
-                        alt=""
-                        style={{
-                            position: 'relative',
-                            display:'block',
-                            top:'-24px',
-                            right: 0
-                        }}
+                        alt="big star"
                     />
                     <img
+                        className={css.secondStar}
                         src={starYellow}
                         alt=""
-                        style={{
-                            position: 'relative',
-                            display: 'block',
-                            top: '-86px',
-                            left: 62,
-                            width:16
-                        }}
                     />
                 </Box>
                 <Typography
