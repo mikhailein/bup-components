@@ -1,0 +1,13 @@
+.container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px;
+    margin-bottom: 84px; 
+}
+
+.rightSide{
+    display: flex;
+    align-items: center;
+    color:#667085;
+}

@@ -1,0 +1,29 @@
+.container {
+  width: 360px;
+  align-self: center;
+}
+
+.textField {
+  margin-bottom: 20px;
+  height: 44px;
+}
+
+.arrow {
+  position: relative;
+  bottom: 130px;
+  right: -365px;
+}
+
+.checkBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #667085;
+  margin-bottom: 24px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+

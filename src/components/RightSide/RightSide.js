@@ -1,20 +1,25 @@
 import React from 'react'
-import { Typography, Box } from '@mui/material'
+import { Typography, Box, Container } from '@mui/material'
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import star from '../static/images/star.svg'
 import starYellow from '../static/images/star-yellow.svg'
 import css from './RightSide.module.css'
+import avatar1 from '../static/images/avatar1.png'
+import avatar2 from '../static/images/avatar2.png'
+import avatar3 from '../static/images/avatar3.png'
+import avatar4 from '../static/images/avatar4.png'
+import avatar5 from '../static/images/avatar5.png'
 
 const RightSide = () => {
     return (
-        <Box className={css.container} >
-            <Box style={{width:576}}>
+        <div className={css.container}>
+            <Box style={{ width: 576 }}>
                 <Box className={css.imgBox}>
                     <img
                         className={css.firstStar}
                         src={starYellow}
-                        alt=""
+                        alt="small star"
                     />
                     <img
                         className={css.bigStar}
@@ -24,7 +29,7 @@ const RightSide = () => {
                     <img
                         className={css.secondStar}
                         src={starYellow}
-                        alt=""
+                        alt="small star"
                     />
                 </Box>
                 <Typography
@@ -34,23 +39,21 @@ const RightSide = () => {
                     style={{ fontSize: 60, marginBottom: 24 }}
                 >
                     Start turning your ideas into reality</Typography>
-                <Typography
-                    component='p'
-                    variant='body1'
-                    style={{ marginBottom: 32 }}
-                >Log in to BUP to find the best influencers and companies to create the most daring collaborations</Typography>
-                <Box sx={{ display: 'flex', alignItems: 'baseline' }}>
+                <p className={css.info}>
+                    Log in to BUP to find the best influencers and companies to create the most daring collaborations
+                </p>
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
                     <AvatarGroup style={{ marginRight: 16 }}>
-                        <Avatar sx={{ width: 40, height: 40 }} alt="Remy Sharp" src="./static/images/1.jpg" />
-                        <Avatar sx={{ width: 40, height: 40 }} alt="Travis Howard" src="./static/images/2.jpg" />
-                        <Avatar sx={{ width: 40, height: 40 }} alt="Agnes Walker" src="./static/images/4.jpg" />
-                        <Avatar sx={{ width: 40, height: 40 }} alt="Trevor Henderson" src="./static/images/5.jpg" />
-                        <Avatar sx={{ width: 40, height: 40 }} alt="Trevor Henderson" src="./static/images/5.jpg" />
+                        <Avatar className={css.avatar} alt="Remy Sharp" src={avatar1} />
+                        <Avatar className={css.avatar} alt="Travis Howard" src={avatar2} />
+                        <Avatar className={css.avatar} alt="Agnes Walker" src={avatar3} />
+                        <Avatar className={css.avatar} alt="Trevor Henderson" src={avatar4} />
+                        <Avatar className={css.avatar} alt="Trevor Henderson" src={avatar5} />
                     </AvatarGroup>
                     <Typography>Join 40,000+ users</Typography>
                 </Box>
             </Box>
-        </Box>
+        </div>
     )
 }
 
