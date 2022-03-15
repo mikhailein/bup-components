@@ -6,6 +6,7 @@ const PurpleButton = ({text}) => {
       <Button
           type="submit"
           style={{
+              marginTop:24,
               marginBottom: 16,
               color: 'white',
               backgroundColor: '#6941C6',

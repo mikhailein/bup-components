@@ -1,13 +1,14 @@
 import React from 'react'
 import css from './Input.module.css'
 
-const Input = ({placeholder}) => {
+const Input = ({ placeholder, refer, type }) => {
   return (
-      <input
-          className={css.input}
-          placeholder={placeholder}
-          type="Email"
-      />
+    <input
+      ref={refer}
+      className={css.input}
+      placeholder={placeholder}
+      type={type}
+    />
   )
 }
 

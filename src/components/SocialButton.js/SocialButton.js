@@ -1,9 +1,10 @@
 import { Button } from '@mui/material'
 import React from 'react'
 
-const SocialButton = ({ src, text }) => {
+const SocialButton = ({ src, text, onClick }) => {
     return (
         <Button
+            onClick={onClick}
             style={{
                 color: '#344054',
                 borderColor: '#D0D5DD',
